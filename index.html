@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UM 8</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Index Page -->
+  <div class="page" id="page1">
+    <div class="logo-space"> U M </div>
+    <div class="swipe-indicator">Swipe up ↓</div>
+  </div>
+
+  <!-- Dark Mode Dashboard -->
+  <div class="page" id="page2">
+    <h1>Powered by UM</h1><br>
+    <div class="buttons">
+      <button class="switch" onclick="showTools()">Tools</button><br>
+      <button class="switch" onclick="showSoftware()">Software</button><br>
+      <button class="switch" onclick="exitApp()">Exit</button>
+    </div>
+  </div>
+
+  <!-- Tools Page -->
+  <div class="page" id="toolsPage">
+    <h2>Tools</h2>
+    <ul>
+      <li onclick="showProject('Project 1000+ wifi')">Project 1000+ wifi</li>
+      <li onclick="showProject1('Project Network Jammer')">Project Network Jammer</li>
+      <li onclick="showProject2('Project Auto fill')">Project Auto fill</li>
+    </ul>
+  </div>
+
+  <!-- Project Details Page -->
+  <div class="page" id="projectDetails">
+    <h3 id="projectTitle"></h3>
+    <div class="image-gallery">
+      <img src="" alt="Image 1" id="img1">
+      <img src="" alt="Image 2" id="img2">
+    </div>
+  <pre id="codeSection">// Code preview will appear here</pre>
+  <h3>discpition</h3>
+  <pre id="discpition">// Code preview will appear here</pre>
+  </div>
+  
+  <div class="page" id="projectDetails1">
+    <h3 id="projectTitle1"></h3>
+    <div class="image-gallery">
+      <img src="" alt="Image 1" id="img1_1">
+      <img src="" alt="Image 2" id="img2_1">
+    </div>
+  <pre id="codeSection1">// Code preview will appear here</pre>
+  <h3>discpition</h3>
+  <pre id="discpition1">// Code preview will appear here</pre>
+  </div>
+
+  <div class="page" id="projectDetails2">
+    <h3 id="projectTitle2"></h3>
+    <div class="image-gallery">
+      <img src="" alt="Image 1" id="img1_2">
+      <img src="" alt="Image 2" id="img2_2">
+    </div>
+  <pre id="codeSection2">// Code preview will appear here</pre>
+  <h3>discpition</h3>
+  <pre id="discpition2">// Code preview will appear here</pre>
+  </div>
+
+  <!-- Software Page -->
+  <div class="page" id="softwarePage">
+    <h2>Software Redirect</h2>
+    <button class="switch" onclick="redirectSoftware()">Arduino IDE</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
